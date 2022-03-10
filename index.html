@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员登录</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: #0bbd00;
+            background-image: linear-gradient(60deg,#eb00fc 25%, #0017fa 50%, #04f6c4 75%, #fccd02 100%);
+            background-repeat: no-repeat;
+            padding-bottom: 150%;
+        }
+        #app{
+            margin-top: 70px;
+        }
+        #login{
+            background-color: #0bbd00;
+            background-image: linear-gradient(90deg,#0bbd00 0%, #aceeaa 100%);
+            /*auto自动对齐*/
+            margin: 0 auto;
+            padding: 0;
+            width: 700px;
+        }
+        span{
+            display: inline-block;
+            width: 130px;
+            font-size: xx-large;
+            line-height: 100px;
+            margin-left: 100px;
+        }
+        h2{
+            font-size: xxx-large;
+            margin: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        #login div:nth-of-type(1) input{
+            /*border:粗细 样式(solid:实线,dashed:虚线) 颜色*/
+            border: 2px ridge gray;
+            height: 20px;
+            padding-top: 5px;
+            padding-bottom: 1px;
+            width: 200px;
+        }
+        #login div:nth-of-type(2) input{
+            border: 2px ridge gray;
+            height: 20px;
+            padding-top: 5px;
+            padding-bottom: 1px;
+            width: 200px;
+        }
+        form{
+            height: 300px;
+            background-color: #4158D0;
+            background-image: linear-gradient(13deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        }
+        input[type=submit]{
+            color: #000000;
+            margin: 0 auto;
+            display: block;
+            background-color: rgba(0,0,0,0%);
+            border: 0px;
+            width: 100px;
+            height: 100px;
+            font-size: xx-large;
+        }
+        input[type=submit]:hover{
+            color: #ff0000;
+        }
+        #app>div>img{
+            width: 200px;
+            height: 200px;
+            /*设置边框圆角*/
+            border-radius: 100px;
+            /*居中*/
+            display: block;/*把img从内联元素变为块元素*/
+            margin: 10px auto;
+            /*设置边框阴影*/
+            /* 颜色 水平偏移 垂直偏移 模糊距离*/
+            box-shadow: #000000 0px 0px 100px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <div>
+        <img src="image/kl.jpg">
+    </div>
+    <div id="login">
+        <h2>直接点登录</h2>
+        <form action="相对定位作业.html">
+            <div id="username">
+                <span>用户名：</span>
+                <input type="text" value="admin">
+            </div>
+            <div>
+                <span>密码：</span>
+                <input type="password" value="admin">
+            </div>
+            <div>
+                <input type="submit" value="登录">
+            </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
